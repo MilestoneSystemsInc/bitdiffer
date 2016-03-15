@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB8E530F-3259-4214-95E3-2C6B065FF458}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BitDiffer.Core</RootNamespace>
+    <AssemblyName>BitDiffer.Core</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\BitDiffer.Shared\BitDiffer.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <BaseIntermediateOutputPath>..\..\..\OutputFiles\$(Platform)\$(Configuration)\Tools\$(AssemblyName)\obj\</BaseIntermediateOutputPath>
+    <OutputPath>..\..\..\OutputFiles\$(Platform)\$(Configuration)\Tools\$(AssemblyName)\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include=".\BitDiffer.Shared\SolutionInfo.cs">
+      <Link>SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include=".\BitDiffer.Core\AssemblyComparer.cs" />
+    <Compile Include=".\BitDiffer.Core\AssemblyComparerThread.cs" />
+    <Compile Include=".\BitDiffer.Core\AssemblyManager.cs" />
+    <Compile Include=".\BitDiffer.Core\AssemblyManagerFactory.cs" />
+    <Compile Include=".\BitDiffer.Core\AssemblyManagerIsolationNone.cs" />
+    <Compile Include=".\BitDiffer.Core\AssemblyManagerIsolationLow.cs" />
+    <Compile Include=".\BitDiffer.Core\AssemblyManagerIsolationMedium.cs" />
+    <Compile Include=".\BitDiffer.Core\AssemblyManagerIsolationHigh.cs" />
+    <Compile Include=".\BitDiffer.Core\DomainExtractorPair.cs" />
+    <Compile Include=".\BitDiffer.Core\IsolationDetector.cs" />
+    <Compile Include=".\BitDiffer.Core\Properties\AssemblyInfo.cs" />
+    <Compile Include=".\BitDiffer.Extractor\AssemblyExtractor.cs" />
+    <Compile Include=".\BitDiffer.Common\Configuration\AppDomainIsolationLevel.cs" />
+    <Compile Include=".\BitDiffer.Common\Configuration\ComparisonFilter.cs" />
+    <Compile Include=".\BitDiffer.Common\Configuration\DiffConfig.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\CodeDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\EnumItemDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\ParentDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\ReferencesDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\ResourcesDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\AttributesDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\NamespaceDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\OperatorDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\AssemblyDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\AttributeDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\ClassDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\EntityDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\EnumDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\EventDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\FieldDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\InterfaceDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\MemberDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\MethodDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\PropertyDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\ReferenceDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\ResourceDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\RootDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\TraitDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Detail\TypeDetail.cs" />
+    <Compile Include=".\BitDiffer.Common\Exceptions\ArgumentParserException.cs" />
+    <Compile Include=".\BitDiffer.Common\Exceptions\ExceptionExtension.cs" />
+    <Compile Include=".\BitDiffer.Common\Exceptions\WeakerMatchException.cs" />
+    <Compile Include=".\BitDiffer.Common\Interfaces\IHandleProgress.cs" />
+    <Compile Include=".\BitDiffer.Common\Interfaces\ICanNavigate.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\AlignMatchStatus.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\AssemblyComparison.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\AssemblyDirectoryEntry.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\ChangeType.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\AlignableBase.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\AssemblyGroup.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\Constants.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\FilterStatus.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\ProgramArguments.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\ProgressStatus.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\Set.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\Status.cs" />
+    <Compile Include=".\BitDiffer.Common\Misc\Visibility.cs" />
+    <Compile Include=".\BitDiffer.Common\Exceptions\UnalignedListException.cs" />
+    <Compile Include=".\BitDiffer.Common\Interfaces\ICanAlign.cs" />
+    <Compile Include=".\BitDiffer.Common\Interfaces\ICanCompare.cs" />
+    <Compile Include=".\BitDiffer.Common\Interfaces\IHaveVisibility.cs" />
+    <Compile Include=".\BitDiffer.Common\TraceListeners\ErrorLevelTraceListener.cs" />
+    <Compile Include=".\BitDiffer.Common\TraceListeners\RelayingTraceListener.cs" />
+    <Compile Include=".\BitDiffer.Common\TraceListeners\TraceEventArgs.cs" />
+    <Compile Include=".\BitDiffer.Common\Utility\AppendMode.cs" />
+    <Compile Include=".\BitDiffer.Common\Utility\ChangeTypeUtil.cs" />
+    <Compile Include=".\BitDiffer.Common\Utility\CodeStringBuilder.cs" />
+    <Compile Include=".\BitDiffer.Common\Utility\HtmlUtility.cs" />
+    <Compile Include=".\BitDiffer.Common\Utility\MethodStreamer.cs" />
+    <Compile Include=".\BitDiffer.Common\Utility\GenericUtility.cs" />
+    <Compile Include=".\BitDiffer.Common\Utility\ListOperations.cs" />
+    <Compile Include=".\BitDiffer.Common\Utility\Log.cs" />
+    <Compile Include=".\BitDiffer.Common\Utility\Stopwatch.cs" />
+    <Compile Include=".\BitDiffer.Common\Utility\ThreadPoolWait.cs" />
+    <Compile Include=".\BitDiffer.Common\Utility\VisibilityUtil.cs" />
+	
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

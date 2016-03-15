@@ -67,7 +67,7 @@ namespace BitDiffer.Core
 
 			string appDomainName = Constants.ExtractionDomainPrefix + " " + _domainID.ToString();
 			string typeName = new AssemblyExtractor().GetType().FullName; // Do it this way to work with obfuscator
-			string extractorPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "BitDiffer.Extractor.dll");
+			string extractorPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "BitDiffer.Core.dll");
 
 			Log.Verbose("Creating {0}", appDomainName);
 			AppDomain domain = AppDomain.CreateDomain(appDomainName, evidence, setup);
