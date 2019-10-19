@@ -18,7 +18,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -70,14 +70,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BitDiffer.Common\BitDiffer.Common.csproj">
-      <Project>{4701FEDD-3664-432A-B602-4EF5CA3D0050}</Project>
-      <Name>BitDiffer.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BitDiffer.Core\BitDiffer.Core.csproj">
-      <Project>{BB8E530F-3259-4214-95E3-2C6B065FF458}</Project>
-      <Name>BitDiffer.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BitDiffer.Extractor\BitDiffer.Extractor.csproj">
       <Project>{14E29632-027E-48DF-AC95-40E64BBBC5E0}</Project>
       <Name>BitDiffer.Extractor</Name>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{26E0EEDE-0920-479D-B5A4-57B0AB9C5577}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		{B4F97281-0DBD-4835-9ED8-7DFB966E87FF} = {B4F97281-0DBD-4835-9ED8-7DFB966E87FF}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitDiffer.Core", "BitDiffer.Core\BitDiffer.Core.csproj", "{BB8E530F-3259-4214-95E3-2C6B065FF458}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitDiffer.Console", "BitDiffer.Console\BitDiffer.Console.csproj", "{C3BFA742-64D4-493F-B40A-8F21693A6462}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitDiffer.Extractor", "BitDiffer.Extractor\BitDiffer.Extractor.csproj", "{14E29632-027E-48DF-AC95-40E64BBBC5E0}"
@@ -22,8 +20,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitDiffer.Tests", "BitDiffer.Tests\BitDiffer.Tests.csproj", "{C44E230F-6E53-4779-A7D9-568F2A961842}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitDiffer.Tests.Subject1", "BitDiffer.Tests.Subject1\BitDiffer.Tests.Subject1.csproj", "{6AA1230B-F24E-4A10-9CCF-2245828F282B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitDiffer.Common", "BitDiffer.Common\BitDiffer.Common.csproj", "{4701FEDD-3664-432A-B602-4EF5CA3D0050}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitDiffer.Tests.Reference1", "BitDiffer.Tests.Reference1\BitDiffer.Tests.Reference1.csproj", "{120C2029-B09E-4375-AA4D-261A93C759DA}"
 EndProject
@@ -35,16 +31,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aga.Controls", "Aga.Control
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitDiffer.Client", "BitDiffer.Client\BitDiffer.Client.csproj", "{F113EB58-59DE-4682-8489-1F5DE6864ACA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitDiffer.Core.milestone", "BitDiffer.Core.milestone.csproj", "{BB8E530F-3259-4214-95E3-2C6B065FF458}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BB8E530F-3259-4214-95E3-2C6B065FF458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB8E530F-3259-4214-95E3-2C6B065FF458}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB8E530F-3259-4214-95E3-2C6B065FF458}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB8E530F-3259-4214-95E3-2C6B065FF458}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C3BFA742-64D4-493F-B40A-8F21693A6462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C3BFA742-64D4-493F-B40A-8F21693A6462}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3BFA742-64D4-493F-B40A-8F21693A6462}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,10 +55,6 @@ Global
 		{6AA1230B-F24E-4A10-9CCF-2245828F282B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AA1230B-F24E-4A10-9CCF-2245828F282B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AA1230B-F24E-4A10-9CCF-2245828F282B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4701FEDD-3664-432A-B602-4EF5CA3D0050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4701FEDD-3664-432A-B602-4EF5CA3D0050}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4701FEDD-3664-432A-B602-4EF5CA3D0050}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4701FEDD-3664-432A-B602-4EF5CA3D0050}.Release|Any CPU.Build.0 = Release|Any CPU
 		{120C2029-B09E-4375-AA4D-261A93C759DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{120C2029-B09E-4375-AA4D-261A93C759DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{120C2029-B09E-4375-AA4D-261A93C759DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -85,9 +75,16 @@ Global
 		{F113EB58-59DE-4682-8489-1F5DE6864ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F113EB58-59DE-4682-8489-1F5DE6864ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F113EB58-59DE-4682-8489-1F5DE6864ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB8E530F-3259-4214-95E3-2C6B065FF458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8E530F-3259-4214-95E3-2C6B065FF458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8E530F-3259-4214-95E3-2C6B065FF458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8E530F-3259-4214-95E3-2C6B065FF458}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {109BC604-7A6B-4E65-A333-DFFFF28AD0BE}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = BitDiffer.vsmdi
