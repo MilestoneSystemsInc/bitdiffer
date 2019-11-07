@@ -78,7 +78,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BitDiffer.Common\BitDiffer.Common.csproj">
+    <ProjectReference Include="..\BitDiffer.Common\BitDiffer.Common.milestone.csproj">
       <Project>{4701FEDD-3664-432A-B602-4EF5CA3D0050}</Project>
       <Name>BitDiffer.Common</Name>
     </ProjectReference>
